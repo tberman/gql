@@ -1,0 +1,12 @@
+query Search {
+  search {
+    ... on Human {
+      name
+    }
+    ...DroidFragment
+  }
+}
+
+fragment DroidFragment on Droid {
+  name
+}
